@@ -15,7 +15,6 @@
             line-height:1.7em;
             color: #999;
         }
-
         .sidebar {
             height: 100%;
             width: 0;
@@ -30,9 +29,10 @@
         }
 
         .sidebar a {
+            font-family: 'Poppins', sans-serif;
             padding: 8px 8px 8px 32px;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 1.1em;
             color: #faf3f3;
             display: block;
             transition: 0.3s;
@@ -45,6 +45,7 @@
         }
         .lessons{
             padding-top: 10px;
+            padding-bottom: 10px;
         }
 
         .sidebar .closebtn {
@@ -57,11 +58,15 @@
 
         .openbtn {
             font-size: 20px;
+            border-radius: 25px;
             cursor: pointer;
             background-color: #58646d;
             color: white;
             padding: 10px 15px;
             border: none;
+            font-size: 1.1em;
+            -webkit-box-shadow: 0 8px 6px -6px rgb(66, 66, 66);
+            -moz-box-shadow: 0 8px 6px -6px rgb(66, 66, 66);
         }
 
         .openbtn:hover {
@@ -94,22 +99,22 @@
            class="closebtn"
            onclick="closeNav()">×</a>
         <div class="lessons">
-            <a href="#"> Statistics</a>
+            <a href="#">Lesson 1: Statistics</a>
         </div>
         <div class="lessons">
-            <a href="#"> Linear Algebra </a>
+            <a href="#">Lesson 2: Linear Algebra </a>
         </div>
         <div class="lessons">
-            <a href="#"> Programming </a>
+            <a href="#">Lesson 1: Programming </a>
         </div>
         <div class="lessons">
-            <a href="#"> Machine Learning</a>
+            <a href="#">Lesson 3: Machine Learning</a>
         </div>
         <div class="lessons">
-            <a href="#"> Data Mining</a>
+            <a href="#">Lesson 4: Data Mining</a>
         </div>
         <div class="lessons">
-            <a href="#"> Data Visualization</a>
+            <a href="#">Lesson 5: Data Visualization</a>
         </div>
         
 
@@ -118,7 +123,7 @@
 
     <div id="main">
         <button class="openbtn"
-                onclick="openNav()">☰ Open Lessons</button>
+                onclick="openNav()"> <- Lessons</button>
 
         <h2>Lesson Title : Statistics</h2>
         
