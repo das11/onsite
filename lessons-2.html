@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1em;
+            font-weight:300;
+            line-height:1.7em;
+            color: #999;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #58646d;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #faf3f3;
+            display: block;
+            transition: 0.3s;
+
+        }
+
+        
+        .lessons:hover{
+            background-color: #7386D5;
+        }
+        .lessons{
+            padding-top: 10px;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #58646d;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mySidebar"
+         class="sidebar">
+        <a href="javascript:void(0)"
+           class="closebtn"
+           onclick="closeNav()">×</a>
+        <div class="lessons">
+            <a href="#"> Statistics</a>
+        </div>
+        <div class="lessons">
+            <a href="#"> Linear Algebra </a>
+        </div>
+        <div class="lessons">
+            <a href="#"> Programming </a>
+        </div>
+        <div class="lessons">
+            <a href="#"> Machine Learning</a>
+        </div>
+        <div class="lessons">
+            <a href="#"> Data Mining</a>
+        </div>
+        <div class="lessons">
+            <a href="#"> Data Visualization</a>
+        </div>
+        
+
+
+    </div>
+
+    <div id="main">
+        <button class="openbtn"
+                onclick="openNav()">☰ Open Lessons</button>
+
+        <h2>Lesson Title : Statistics</h2>
+        
+            
+                <video controls
+                       width="100%"
+                       height="70%"
+                      
+                       >
+                    <source src="https://d388bta4miio4e.cloudfront.net/test/video.mp4"
+                            type="video/mp4">
+                </video>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                </p>
+          
+
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</body>
+
+</html>
